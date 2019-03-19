@@ -1,0 +1,7 @@
+body {
+  color: red; }
+
+.a {
+  display: flex;
+  background: linear-gradient(red, green);
+  color: #000; }
