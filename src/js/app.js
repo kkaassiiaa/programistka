@@ -86,7 +86,7 @@ class Slider {
 }
 
 // Work only when main page
-if (document.URL === 'http://zadanie.programistka.it/') {
+if (document.URL === 'http://programistka.it/') {
   // Argument = data-modal-id in html portfolio-link
   new Slider('#kalendarz');
   new Slider('#mistrzostwa');
