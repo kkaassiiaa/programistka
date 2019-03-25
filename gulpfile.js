@@ -9,18 +9,14 @@ const autoprefixer = require('gulp-autoprefixer'); // autoprefixy dla css
 
 gulp.task('css', () => {
   return gulp.src('src/sass/style.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('src/css'))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 version'],
       cascade: false
     }))
+    .pipe(gulp.dest('src/css'))
     .pipe(cleanCss({comptaitility: 'ie8'}))
     .pipe(gulp.dest('public/css'));
-});
-
-gulp.task('watch:sass', () => {
-  gulp.watch('src/sass/**/*.scss', gulp.series('css'));
 });
 
 gulp.task('jsMinify', () => {
@@ -30,4 +26,9 @@ gulp.task('jsMinify', () => {
     }))
     .pipe(uglify())
     .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('watch', () => {
+  gulp.watch('src/sass/**/*.scss', gulp.series('css'));
+  gulp.watch('src/js/app.js', gulp.series('jsMinify'));
 });

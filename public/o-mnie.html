@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>programistka.it - Hello World!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/favicon/cropped-favicon-1-32x32.png" sizes="32x32" />
+  <link rel="icon" href="./images/favicon/cropped-favicon-1-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="./images/favicon/cropped-favicon-1-180x180.png" />
+  <meta name="msapplication-TileImage" content="./images/favicon/cropped-favicon-1-270x270.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&amp;subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrap">
+    <header class="site-header wrapper primary-underline">
+      <nav class="primary-nav">
+        <div class="primary-nav__mobile-menu">
+          <a href="#">Menu</a>
+          <div class="primary-nav__menu-icon">
+            <div class="primary-nav__menu-icon__middle"></div>
+          </div>
+        </div>
+        <ul class="primary-nav__menu-content">
+          <li><a href="/">Strona główna</a></li>
+          <li><a href="o-mnie.html" class="is-current-link">O mnie</a></li>
+          <li><a href="#" id="kontaktLink" data-modal-id="kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__logo"><a href="/">programistka.it</a></div>
+    </header>
+
+    <main>
+      <div class="wrapper primary-underline primary-underline--mainColor1">
+        <h1 class="headline">O mnie</h1>
+      </div>
+
+      <div class="wrapper page-about">
+        <h2 id="matematyka" class="page-about__title"><span>Matematyka</span></h2>
+        <div class="page-about__item">
+          <p>Jestem absolwentką matematyki z rewalidacją oraz matematyki stosowanej na Uniwersytecie Pedagogicznym w
+            Krakowie. Dlaczego akurat wybrałam taki kierunek? Bo do momentu wyboru studiów, matematyka nigdy nie
+            sprawiała mi problemów. Wiem kiepski powód:) Ale to prawda. Najfajniejsze w niej jest to, że rzadko trzeba
+            się uczyć czegoś na pamięć. Najważniejsze jest zrozumienie i logiczne myślenie. Bardzo przydaje się to,
+            zarówno w życiu codziennym jak i w programowaniu.</p>
+        </div>
+
+        <h2 id="programowanie" class="page-about__title">Programowanie</h2>
+        <div class="page-about__item">
+          <p>Myśl o programowaniu zrodziła się w mojej głowie, gdy poszukiwałam pracy jako nauczyciel matematyki. Po tym
+            jak zobaczyłam ogłoszenie dotyczące kursu programowania stwierdziłam, że muszę spróbować. Ukończyłam kurs
+            online i od kilku lat pracuję jako „młodszy programista”, chociaż nie jestem pewna czy mogę się tak nazywać.
+            Na miano programisty trzeba naprawdę zasłużyć – wieloma latami praktyki i doświadczenia, a to na pewno
+            jeszcze przede mną.</p>
+        </div>
+
+        <h2 id="nauka" class="page-about__title">Nauka</h2>
+        <div class="page-about__item">
+          <p>Jako nauczyciel z wykształcenia, wiem jak ważna jest nauka w życiu każdego człowieka. Dlatego też, każdego
+            dnia staram się uczyć i poznawać nowe rzeczy. W 100 procentach zgadzam się z tym co powiedział amerykański
+            pisarz, nowelista i scenarzysta filmowy – Francis Scott Fitzgerald:</p>
+          <p class="page-about__quote">"Im więcej wiesz, tym więcej pozostaje do poznania i wciąż tego przybywa."</p>
+        </div>
+
+        <h2 id="sport" class="page-about__title">Sport</h2>
+        <div class="page-about__item">
+          <p>Wychowałam się w rodzinie, w której sport odgrywał i zawsze będzie odgrywać bardzo ważną rolę. I nie chodzi
+            tu tylko o sport jako o kulturę fizyczną i dbanie o własne ciało (chociaż oczywiście i z tą formą, każdy
+            miał lub nadal ma coś wspólnego), ale przede wszystkim o podziwianie zawodników uprawiających różne
+            dyscypliny sportowe. Dlatego też sport od zawsze króluje na ekranach naszego telewizora. W szczególności
+            lubię snookera, siatkówkę i piłką nożną, ale inne dyscypliny sportu również nie są mi obce.</p>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="site-footer wrapper">
+      <div class="site-footer__text wrapper">
+        2017-2019 Copyright © programistka.it
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="kontakt">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Zapraszam do kontatku</span></h2>
+        <ul class="modal__list">
+          <li class="modal__list-item"><a href="mailto:programistka.it@gmail.com" title="programistka.it@gmail.com"
+              target="_blank" rel="noopener"><img src="./images/mail.png" alt=""></a></li>
+          <li class="modal__list-item"><a href="https://www.facebook.com/profile.php?id=100002217587977"
+              title="Facebook - Katarzyna Wszołek" target="_blank" rel="noopener"><img src="./images/facebook.png" alt=""></a></li>
+          <li class="modal__list-item"><a href="http://www.linkedin.com/in/katarzyna-wszołek-76b82798"
+              title="LinkedIn - Katarzyna Wszołek" target="_blank" rel="noopener"><img src="./images/linkedin.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #kontakt -->
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

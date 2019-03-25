@@ -1,9 +1,19 @@
-@import 'modules/test';
-
-$mainBlue: #000;
-
-.a {
-  display: flex;
-  background: linear-gradient(red, green);
-  color: $mainBlue;
-}
+@import "node_modules/normalize-scss/sass/normalize/import-now";
+@import 'modules/variable';
+@import 'modules/mixins';
+@import 'modules/global';
+@import 'modules/wrapper';
+@import 'modules/site-header';
+@import 'modules/primary-nav';
+@import 'modules/primary-underline';
+@import 'modules/headline';
+@import 'modules/large-hero';
+@import 'modules/quote';
+@import 'modules/section-title';
+@import 'modules/portfolio';
+@import 'modules/row';
+@import 'modules/about';
+@import 'modules/site-footer';
+@import 'modules/page-about';
+@import 'modules/slider';
+@import 'modules/modal';

@@ -1,0 +1,144 @@
+.primary-nav {
+  float: none;
+  display: block;
+  text-align: center;
+
+  @include atMedium {
+    float: right;
+    height: 76px;
+  }
+
+  &__menu-content {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    box-shadow: -7px 6px 12px 2px rgba(0,0,0,.75);
+    z-index: -10;
+    transition: opacity .6s ease-out;
+
+    @include atMedium {
+      opacity: 1;
+      @include clearfix;
+      z-index: 10;
+      box-shadow: none;
+    }
+
+    a {
+      color: #000;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-decoration: none;
+      display: block;
+      line-height: 30px;
+  
+      @include atMedium {
+        line-height: 76px;
+      }
+    } 
+    
+    a:hover {
+      color: $mainColor1;
+    }
+  
+    a.is-current-link {
+      color: $mainColor1;
+      font-weight: 700;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 20;
+    }
+  }
+
+  li {
+    list-style: none;
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #000, $mainColor1, $mainColor2) 1 1 1;
+
+    @include atMedium {
+      display: inline-block;   
+      padding-right: 10px;
+      line-height: 76px;
+      border-bottom: none;
+    }
+  }
+
+  li:last-child {
+    @include atMedium {
+      padding-right: 0;
+    }
+  }
+
+  &__mobile-menu {
+    background-color: $mainColor1;
+    text-align: left;
+    position: relative;
+    
+    a {
+      color: #fff;
+      font-size: 0.6875rem;
+      padding: 10px 15px;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-decoration: none;
+      display: block;
+    }
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 10;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transition: all .3s ease-out;   
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;      
+    }
+  }
+}

@@ -1,13 +1,460 @@
 <!DOCTYPE html>
 <html lang="PL-pl">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>programistka.it - Hello World!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/favicon/cropped-favicon-1-32x32.png" sizes="32x32" />
+  <link rel="icon" href="./images/favicon/cropped-favicon-1-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="./images/favicon/cropped-favicon-1-180x180.png" />
+  <meta name="msapplication-TileImage" content="./images/favicon/cropped-favicon-1-270x270.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&amp;subset=latin-ext"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+  <div id="simplecookienotification_v01"
+    style="display: block; z-index: 99999; min-height: 35px; width: 300px; position: fixed; background: rgb(255, 255, 255); border: 0px #2d70ea; text-align: center; right: 10px; color: rgb(119, 119, 119); bottom: 10px; box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 3px 0px;">
+    <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
+      <span id="simplecookienotification_v01_powiadomienie">Ta strona używa plików cookies.</span><span
+        id="br_pc_title_html"><br></span>
+      <a id="simplecookienotification_v01_info" href="http://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/"
+        style="color: #2d70ea;" target="_blank">Jak wyłączyć cookies?</a>
+      <div id="jwc_hr1" style="height: 10px; display: block;"></div>
+      <a id="okbutton" href="javascript:simplecookienotification_v01_create_cookie('simplecookienotification_v01',1,7);"
+        style="position: relative; background: #2d70ea; color: rgb(255, 255, 255); padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid rgb(227, 242, 253); border-radius: 0px;">AKCEPTUJĘ</a>
+      <div id="jwc_hr2" style="height: 10px; display: block;"></div>
+    </div>
+  </div>
+  <script type="text/javascript">var galTable = new Array(); var galx = 0;</script>
+  <script
+    type="text/javascript">function simplecookienotification_v01_create_cookie(name, value, days) { if (days) { var date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); var expires = "; expires=" + date.toGMTString(); } else var expires = ""; document.cookie = name + "=" + value + expires + "; path=/"; document.getElementById("simplecookienotification_v01").style.display = "none"; } function simplecookienotification_v01_read_cookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(";"); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == " ") c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length); } return null; } var simplecookienotification_v01_jest = simplecookienotification_v01_read_cookie("simplecookienotification_v01"); if (simplecookienotification_v01_jest == 1) { document.getElementById("simplecookienotification_v01").style.display = "none"; }</script>
+  <div class="wrap">
+    <header class="site-header wrapper primary-underline">
+      <nav class="primary-nav">
+        <div class="primary-nav__mobile-menu">
+          <a href="#">Menu</a>
+          <div class="primary-nav__menu-icon">
+            <div class="primary-nav__menu-icon__middle"></div>
+          </div>
+        </div>
+        <ul class="primary-nav__menu-content">
+          <li><a href="/" class="is-current-link">Strona główna</a></li>
+          <li><a href="o-mnie.html">O mnie</a></li>
+          <li><a href="#" id="kontaktLink" data-modal-id="kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__logo"><a href="/">programistka.it</a></div>
+    </header>
+
+    <main>
+      <div class="wrapper primary-underline primary-underline--mainColor1">
+        <h1 class="headline headline--center">Hello World! ;)</h1>
+      </div>
+      <div class="large-hero wrapper primary-underline primary-underline--thin">
+        <img class="large-hero__img" src="./images/kod-binarny.jpg" alt="Kod binarny">
+      </div>
+      <div class="quote wrapper primary-underline primary-underline--mainColor1 primary-underline--thin">
+        <p class="quote__text">"Jeden gram praktyki jest lepszy niż tona teorii. – <span>Swami Shivananda</span>"</p>
+      </div>
+      <div class="portfolio wrapper">
+        <h2 class="section-title"><span>Programy i aplikacje</span></h2>
+        <div class="row">
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="kalendarz">
+                <img src="images/portfolio/kalendarz/kalendarz-1.jpg" alt="">
+                <span class="portfolio__description">Kalendarz wiertnika</span>
+              </a>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="mistrzostwa">
+                <img src="images/portfolio/mistrzostwa/mistrzostwa-swiata.jpg" alt="">
+                <span class="portfolio__description">Typowanie wyników - mistrzostwa świata 2018</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="angielski">
+                <img src="images/portfolio/angielski/angielski-branza-it-strona-glowna.jpg" alt="">
+                <span class="portfolio__description">Aplikacja do nauki angielskiego</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="licznik">
+                <img src="images/portfolio/licznik-znakow/licznik-znakow-1.jpg" alt="">
+                <span class="portfolio__description">Licznik znaków</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="programista">
+                <img src="images/portfolio/strona-projektu/Strona-glowna-projektu.jpg" alt="">
+                <span class="portfolio__description">Strona Projektu "Przyszły Programista"</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="blog">
+                <img src="images/portfolio/blog-programistyczny/blog-programistyczny.jpg" alt="">
+                <span class="portfolio__description">Blog programistyczny</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="portfolio__item">
+              <a class="portfolio__link" href="#" data-modal-id="spoj">
+                <img src="images/portfolio/spoj/konto-spoj.jpg" alt="">
+                <span class="portfolio__description">Polski spoj</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper about">
+        <h2 class="section-title"><span>O mnie</span></h2>
+        <div class="row">
+          <div class="col">
+            <div class="about__item">
+              <a href="o-mnie.html#matematyka" class="about__link">
+                <img src="images/o-mnie/matematyka.jpg" alt="">
+                <p>Matematyka</p>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about__item">
+              <a href="o-mnie.html#programowanie" class="about__link">
+                <img src="images/o-mnie/programowanie.jpg" alt="">
+                <p>Programowanie</p>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about__item">
+              <a href="o-mnie.html#nauka" class="about__link">
+                <img src="images/o-mnie/nauka.jpg" alt="">
+                <p>Nauka</p>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about__item">
+              <a href="o-mnie.html#sport" class="about__link">
+                <img src="images/o-mnie/sport.jpg" alt="">
+                <p>Sport</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer wrapper">
+      <div class="site-footer__text wrapper">
+        2017-2019 Copyright © programistka.it
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="kalendarz">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Kalendarz wiertnika</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Strona internetowa stworzona na potrzeby brata – wiertnika, jego kolegów oraz ich żon 🙂<br>
+                Dzięki niej mogą łatwo i szybko sprawdzić, kiedy będą w pracy a kiedy na wolnym.</p>
+              <p>Dzięki pomocy programisty Java, strona doczekała się swojej wersji jako aplikacja mobilna (Webview),
+                dzięki temu jest zawsze pod ręką.</p>
+              <p>Strona znajduje się pod adresem:<br>
+                <a href="http://kalendarz.programistka.it" target="_blank" rel="noopener">http://kalendarz.programistka.it</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible" src="./images/portfolio/kalendarz/kalendarz-1.jpg"
+                  alt="Kalendarz">
+                <img class="slider__img" src="./images/portfolio/kalendarz/kalendarz-wiertnika-2.jpg"
+                  alt="Kalendarz wietnika - dwa widoki">
+              </div>
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #kalendarz -->
+
+  <div class="modal" id="mistrzostwa">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Typowanie wyników – Mistrzostw Świata 2018</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Strona stworzona na szybko za pomocą WordPress’a, na potrzeby grupy znajomych, którzy lubią piłkę nożną 🙂</p>
+              <p>Dzięki niej mogliśmy sprawdzić się, czy potrafimy przewidzieć z jakim wynikiem zakończy się dany mecz. Wszystkie dane zapisywane były bezpośrednio w tabelach Google Sheet.</p>
+              <p>Adres strony:<br><a href="http://mistrzostwa.programistka.it" target="_blank" rel="noopener">http://mistrzostwa.programistka.it</a></p>
+              <p>Login: demo, Hasło: demo1234</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible"
+                  src="./images/portfolio/mistrzostwa/mistrzostwa-swiata.jpg" alt="Mistrzostwa świata">
+                <img class="slider__img" src="./images/portfolio/mistrzostwa/mistrzostwa-swiata-typowanie.jpg"
+                  alt="Formularz typowania">
+                <img class="slider__img" src="./images/portfolio/mistrzostwa/mistrzostwa-swiata-tabela.jpg"
+                  alt="Tabela wyników">
+                <img class="slider__img" src="./images/portfolio/mistrzostwa/mistrzostwa-swiata-chat.jpg" alt="Chat">
+              </div>
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #mistrzostwa -->
+
+  <div class="modal" id="angielski">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Aplikacja do nauki angielskiego</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Strona internetowa dzięki, której można uczyć się słówek z języka angielskiego i zarazem mój pierwszy
+                większy projekt. Dziś pewnie zmieniłabym w nim bardzo wiele, ale uczucie, że udało mi się stworzyć coś
+                większego – bezcenne 😉</p>
+              <p>Dostępne są słówka związane z branżą IT. Jednak każdy użytkownik ma możliwość dodawania swoich własnych
+                słów, a także usuwania tych, które już umie.</p>
+              <p>Link do strony:<br><a href="http://angielski.programistka.it" target="_blank" rel="noopener">http://angielski.programistka.it</a></p>
+              <p>Login: demo, Hasło: demo1234</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible"
+                  src="./images/portfolio/angielski/angielski-branza-it-strona-glowna.jpg"
+                  alt="Angielski strona główna">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-rejestracja.jpg"
+                  alt="Rejestracja">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-logowanie.jpg"
+                  alt="Logowanie">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-nauka.jpg" alt="Nauka">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-fiszki.jpg" alt="Fiszki">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-ustawienia.jpg"
+                  alt="Ustawienia">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-dodawanie-slowa.jpg"
+                  alt="Dodawanie słowa">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-bledna-odp.jpg"
+                  alt="Błędna odpowiedź">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-prawidlowa-odp.jpg"
+                  alt="Prawidłowa odpowiedź">
+                <img class="slider__img" src="./images/portfolio/angielski/angielski-branza-it-usuwanie-slowa.jpg"
+                  alt="Usuwanie słowa">
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #angielski -->
+
+  <div class="modal" id="licznik">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Licznik znaków</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Mały i prosty w działaniu program liczący ilość znaków w podanym tekście. Napisany w języku C++ i
+                dostępny na Windowsa. Powstał na potrzeby koleżanki z pracy i jest wykorzystywany praktycznie każdego
+                dnia. Nie ma nic fajniejszego niż stworzenie czegoś, co może ułatwić komuś np. pracę 🙂</p>
+              <p>Program można pobrać klikając w <a href="./program/licznik-znakow.exe">pobierz program</a></p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible"
+                  src="./images/portfolio/licznik-znakow/licznik-znakow-1.jpg" alt="Licznik znaków - ilość znaków">
+                <img class="slider__img" src="./images/portfolio/licznik-znakow/licznik-znakow-2.jpg"
+                  alt="Licznik znaków - ilość znaków">
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #licznik -->
+
+  <div class="modal" id="programista">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Strona internetowa Projektu "Przyszły Programista"</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Strona internetowa stworzona dla firmy, która oferuje usługi szkoleniowe z zakresu programowania.</p>
+              <p>Strona została oparta na WordPress’ie oraz na zakupionym szablonie. Szablon został dostosowany do
+                wymagań klienta.</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible"
+                  src="./images/portfolio/strona-projektu/Strona-glowna-projektu.jpg" alt="Strona główna projektu">
+                <img class="slider__img" src="./images/portfolio/strona-projektu/Strona-projektu.jpg"
+                  alt="Strona projektu - stopka">
+                <img class="slider__img" src="./images/portfolio/strona-projektu/Blog-projektu.jpg" alt="Blog projektu">
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #programista -->
+
+  <div class="modal" id="blog">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Blog programistyczny</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Pierwsza strona internetowa stworzona w oparciu WordPress’a. Powstała na szablonie <a
+                  href="https://www.studiopress.com/sample/" target="_blank" rel="noopener">Genesis Sample</a>, który został mocno
+                zmodyfikowany na potrzeby zleceniodawcy.</p>
+              <p>Obecnie strona nie jest już dostępna w Internecie.</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible"
+                  src="./images/portfolio/blog-programistyczny/blog-programistyczny.jpg"
+                  alt="Blog - górna część strony">
+                <img class="slider__img" src="./images/portfolio/blog-programistyczny/blog-programistyczny-2.jpg"
+                  alt="Blog - dolna część strony">
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #blog -->
+
+  <div class="modal" id="spoj">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Polski SPOJ</span></h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="modal__portfolio-description">
+              <p>Link do profilu w serwisie spoj:<br><a href="https://pl.spoj.com/users/kkaassiiaa/"
+                  target="_blank" rel="noopener">https://pl.spoj.com/users/kkaassiiaa/</a></p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="slider">
+              <div class="slider__nav">
+                <a class="slider__link previousSlide">&lsaquo;</a>
+                <a class="slider__link nextSlide">&rsaquo;</a>
+              </div>
+              <div class="slider__content">
+                <img class="slider__img slider__img--is-visible" src="./images/portfolio/spoj/konto-spoj.jpg"
+                  alt="Konsto w serwisie spoj">
+                <img class="slider__img" src="./images/portfolio/spoj/spoj-zaakceptowane.jpg" alt="Przykładowe zadania">
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #spoj -->
+
+  <div class="modal" id="kontakt">
+    <div class="modal__portfolio wrapper">
+      <div class="modal__portfolio-item">
+        <h2 class="section-title"><span>Zapraszam do kontatku</span></h2>
+        <ul class="modal__list">
+          <li class="modal__list-item"><a href="mailto:programistka.it@gmail.com" title="programistka.it@gmail.com" target="_blank"><img src="./images/mail.png" alt=""></a></li>
+          <li class="modal__list-item"><a href="https://www.facebook.com/profile.php?id=100002217587977" title="Facebook - Katarzyna Wszołek" target="_blank"
+            rel="noopener"><img src="./images/facebook.png" alt=""></a></li>
+          <li class="modal__list-item"><a href="http://www.linkedin.com/in/katarzyna-wszołek-76b82798" title="LinkedIn - Katarzyna Wszołek" target="_blank"
+            rel="noopener"><img src="./images/linkedin.png" alt=""></a></li>
+        </ul>      
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div> <!-- #kontakt -->
+
   <script src="js/app.js"></script>
 </body>
+
 </html>

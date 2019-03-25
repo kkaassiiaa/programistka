@@ -1,0 +1,80 @@
+.slider {
+  position: relative;
+
+  &__content {
+    position: relative;
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+
+    @include atSmall {
+      height: 380px;
+    }
+
+    @include atMedium {
+      height: 230px;
+    }
+
+    @include atLarge {
+      height: 320px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+
+    &--is-visible {
+      z-index: 10;
+      opacity: 1;
+    }
+  }
+
+  &__nav {
+    text-align: center;
+    position: initial;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    background-color: $mainColor1;
+    padding: 6px 6px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 30;
+
+    @include atMedium {
+      position: absolute;
+    }
+
+    &.previousSlide {
+      
+      @include atMedium {
+        top: 50%;
+        left: 5px;
+      }
+    }
+
+    &.nextSlide {
+      @include atMedium {
+        top: 50%;
+        right: 5px;
+      }
+    }
+  }
+
+  &__link:hover {
+    background-color: $mainColor2;
+  }
+}

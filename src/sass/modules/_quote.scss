@@ -1,0 +1,13 @@
+.quote {
+  text-align: center;
+  
+  &__text {
+    padding: 10px;  
+    color: $mainColor2;
+
+    span {
+      color: $mainColor1;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.about {
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: all .3s ease-out;
+  }
+
+  &__link:hover {
+    color: $mainColor2;
+    font-weight: 700;
+  }
+
+}

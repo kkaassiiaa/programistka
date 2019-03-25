@@ -1,0 +1,27 @@
+.primary-underline {
+
+  &:after {
+    display: block;
+    height: 5px;
+    background-color: $mainColor2;
+    content: " ";
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @include atMedium {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--mainColor1:after {
+    background-color: $mainColor1;
+  }
+
+  &--thin:after {
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+}
